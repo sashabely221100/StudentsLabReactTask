@@ -1,0 +1,24 @@
+@import 'fonts';
+@import 'variables';
+.footer {
+    max-height: 100px;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $background;
+    &__credits {
+        color: black;
+        font-size: 26px;
+        font-weight: bold;
+    }
+    // &__link {}
+    &__link-img {
+        max-width: 100px;
+    }
+    &__link-name {
+        color: black;
+        font-size: 26px;
+        font-weight: bold;
+    }
+}
