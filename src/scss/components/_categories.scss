@@ -16,7 +16,7 @@
             font-weight: bold;
             cursor: pointer;
             transition: background-color 0.1s ease-in-out;
-            @include noselect();
+            // @include noselect();
             &:hover {
                 background-color: darken(#f9f9f9, 2%);
             }
@@ -24,9 +24,22 @@
                 background-color: darken(#f9f9f9, 5%);
             }
             &.active {
-                background-color: #282828;
+                background-color: $background;
                 color: #fff;
             }
         }
     }
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Chrome/Safari/Opera */
+    -khtml-user-select: none;
+    /* Konqueror */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                  not supported by any browser */
 }
