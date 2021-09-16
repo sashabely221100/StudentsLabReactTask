@@ -1,0 +1,42 @@
+@import '../fonts';
+@import '../variables';
+.footer {
+    margin: 20px auto 0px;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $background;
+    &__credits {
+        color: black;
+        font-size: 26px;
+        font-weight: bold;
+        cursor: default;
+    }
+    &__link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__link-img {
+        max-width: 100px;
+    }
+    &__link-name {
+        color: black;
+        font-size: 26px;
+        font-weight: bold;
+    }
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Chrome/Safari/Opera */
+    -khtml-user-select: none;
+    /* Konqueror */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
